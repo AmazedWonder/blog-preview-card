@@ -105,10 +105,46 @@ body {
 }
 /* title */
 .title {
+    /* margin: 12px 0 6px; */
     color: var(--title);
     font-weight: 800;
     font-size: 1.25rem;
     line-height: 1.1;
+}
+
+.title:hover {
+    color: var(--bg);
+    cursor: pointer;
+}
+
+/* paragraph/body of card */
+.body {
+    margin: 0 0 14px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--accent);
+}
+
+/* author row */
+.card-author {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1px 0 var(--shadow);
+}
+
+.card-author-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+    /* padding-left: 40px; */
 }
 /* 
 .attribution {
